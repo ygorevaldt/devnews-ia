@@ -1,0 +1,60 @@
+body {
+  color: #e6edf3;
+  background: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  text-align: center;
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  font-size: 3rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.counter {
+  color: #8b949e;
+}
+
+.counter strong {
+  color: #e6edf3;
+  font-size: 1.75rem;
+}
+
+a {
+  color: #fff;
+  background: #238636;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background: #2ea043;
+}
+
+.confetti {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

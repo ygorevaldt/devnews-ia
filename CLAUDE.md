@@ -8,12 +8,20 @@ O devnews-ia é uma implementação do [TabNews](https://www.tabnews.com.br) par
 
 ## Stack
 
-- Next.js com App Router: as rotas ficam em `app/`
+- Next.js com App Router: as rotas ficam em `src/app/`
 - React
 - TypeScript em modo `strict`
 - npm como gerenciador de pacotes
 
 As versões e os scripts disponíveis estão em `package.json`.
+
+## Estrutura
+
+- `src/app/`: rotas, layouts e estilos globais, seguindo as convenções de arquivo do App Router.
+- `src/components/`: componentes reutilizáveis. São Server Components por padrão; use `"use client"` apenas quando o componente precisar do navegador.
+- `src/lib/`: acesso a dados e funções sem interface, como as chamadas à API do TabNews.
+- Importe a partir de `src/` com o alias `@/`, como em `@/lib/tabnews`.
+- `next.config.ts` ativa `experimental.inlineCss`: o CSS é embutido no HTML para não bloquear a renderização. Mantenha o CSS global enxuto.
 
 ## Comandos
 
